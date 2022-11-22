@@ -9,3 +9,15 @@ if (a % 2 == 0)
     Console.WriteLine("" + a + " является Четным");
 else
     Console.WriteLine($"{a} является Нечетным");
+
+
+/*
+    Console.WriteLine("Введите число:");
+int a;
+a = Convert.ToInt32(Console.ReadLine());
+
+if (a % 2 == 1)
+    Console.WriteLine("" + a + " является Нечетным");
+else
+    Console.WriteLine($"{a} является Четным");
+    */

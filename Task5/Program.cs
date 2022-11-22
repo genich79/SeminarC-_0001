@@ -6,12 +6,16 @@ Console.WriteLine("Введите два числа: ");
 int a = Convert.ToInt32(Console.ReadLine());
 int b = Convert.ToInt32(Console.ReadLine());
 if (a > b)
-    Console.WriteLine("{0} наибольшее число", a);
+    Console.WriteLine("{0} наибольшее число", a);  
 else
     Console.WriteLine("{0} наибольшее число", b);
 
-
 /*
+Обясните какая разница в этих трех записях, или это одно и тоже только поразному записано?
+    Console.WriteLine("{0} наибольшее число", a);
+    Console.WriteLine( + a + " наибольшее число");
+    Console.WriteLine($"{a} наибольшее число");
+
 Console.Clear();
 Console.WriteLine("Введите два числа: ");
 int a = Convert.ToInt32(Console.ReadLine());
@@ -22,7 +26,6 @@ else
     Console.WriteLine( + b + " наибольшее число");
 
 
-/*
 Console.Clear();
 Console.WriteLine("Введите два числа: ");
 int a = Convert.ToInt32(Console.ReadLine());
