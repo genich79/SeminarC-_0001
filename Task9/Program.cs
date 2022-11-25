@@ -7,8 +7,8 @@
 Console.Clear();
 int n = new Random().Next(10, 100);
 Console.WriteLine($"Случайное число: {n}");
-int n1 = n / 10;
-int n2 = n % 10;
+int n1 = n / 10; // Количество десятков
+int n2 = n % 10; // Количество единиц (последняя цифра числа)
 if (n1 > n2)
     Console.Write(n1);
 else
