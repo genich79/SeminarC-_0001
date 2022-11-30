@@ -4,5 +4,5 @@ Console.Write("Введите число: ");
 int n = Convert.ToInt32(Console.ReadLine());
 if (n % 7 == 0 && n % 23 == 0)
     Console.WriteLine("Число кратно 7 и 23");
-    else
+else
     Console.Write("Число не кратно 7 и 23");
