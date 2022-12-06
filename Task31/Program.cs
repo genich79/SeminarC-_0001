@@ -10,11 +10,9 @@ int[] array = new int[8];
         }
 
             Console.Write("Вывод массива: ");
-        
-    for (int i = 0; i < array.Length; i++)
-            Console.Write($"{string.Join(", ", array[i])}   ");
+            Console.Write($"[{string.Join(", ", array)}]");
             
-            // Console.Write($"{array[i]} ");
+           
 
 
          
