@@ -3,13 +3,13 @@
 
 
 Console.Clear();
-Console.Write("Ведите числовой коэффициент b1: ");
+Console.Write("Введите числовой коэффициент b1: ");
 double b1 = Convert.ToDouble(Console.ReadLine());
-Console.Write("Ведите числовой коэффициент k1: ");
+Console.Write("Введите числовой коэффициент k1: ");
 double k1 = Convert.ToDouble(Console.ReadLine());
-Console.Write("Ведите числовой коэффициент b2: ");
+Console.Write("Введите числовой коэффициент b2: ");
 double b2 = Convert.ToDouble(Console.ReadLine());
-Console.Write("Ведите числовой коэффициент k2: ");
+Console.Write("Введите числовой коэффициент k2: ");
 double k2 = Convert.ToDouble(Console.ReadLine());
 
 double x = (b2 - b1) / (k1 - k2);
