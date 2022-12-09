@@ -9,14 +9,12 @@ void InputArray(int[] array)
         array[i] = new Random().Next(-10, 10);
 }
 
-
 void ReleaseArray(int[] array)
 {
     int sum = 0;
     for (int i = 1; i < array.Length; i+=2)
             sum += array[i];
-    Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях равна: {sum} ");
-    
+    Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях равна: {sum} ");   
 }
 
 Console.Clear();
