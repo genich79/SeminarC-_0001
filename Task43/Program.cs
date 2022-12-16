@@ -9,7 +9,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 string result = String.Empty;
 while (n > 0)
 {
-    result = Convert.ToString(n % 2) + result;
+    result = Convert.ToString(n % 2) + result; // Переворот строки происходит за счет + result
     n /= 2;
 }
 Console.WriteLine(result);
