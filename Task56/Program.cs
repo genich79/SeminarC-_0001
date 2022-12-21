@@ -1,4 +1,6 @@
-﻿void inputMatrix(int[,] matrix)
+﻿// Задача 53: Задайте двумерный массив. Напишите программу, которая поменяет местами первую и последнюю строку массива.
+
+void inputMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
@@ -22,9 +24,23 @@ void SwapFirstLastString (int[,] matrix)
     }
 }
 
+void PrintArray(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i, j]}\t ");
+        }
+        Console.WriteLine();
+    }
+}
+
 Console.Clear();
 Console.Write("Введите размеры матрицы: ");
 int[] coord = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray();
 int[,] matrix = new int[coord[0], coord[1]];
 inputMatrix(matrix);
+Console.WriteLine();
 SwapFirstLastString(matrix);
+PrintArray(matrix);

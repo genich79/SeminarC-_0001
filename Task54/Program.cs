@@ -29,21 +29,35 @@ void ReleaseMatrix(int[, ] matrix, int x, int y)
         Console.WriteLine(matrix[x, y]);
 }
 
+
+// void PrintArray(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             Console.Write($"{matrix[i, j]}\t ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
 Console.Clear();
 Console.Write("Введите размеры матрицы: ");
 string[] size = Console.ReadLine().Split(" ");
 int[,] matrix = new int[int.Parse(size[0]), int.Parse(size[1])];
 InputMatrix(matrix);
 Console.Write("Введите позицию элемента ");
-string[] coord = Console.ReadLine().Split(" ");
-int[,] martix = new int[int.Parse(coord[0]), int.Parse(coord[1])];
-ReleaseMatrix(matrix, coord[0] - 1, coord[1] - 1);
+// string[] coord = Console.ReadLine().Split(" ");
+// int[,] martix = new int[Convert.ToInt32(coord[0]), Convert.ToInt32(coord[1])];
+// ReleaseMatrix(matrix, coord[0]-1, coord[1] -1);
+
 
 // Console.Clear();
 // Console.Write("Введите размеры матрицы: ");
 // int[] size = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray();
-// int[, ] matrix = new int[size[0], size[1]];
+// int[,] matrix = new int[size[0], size[1]];
 // InputMatrix(matrix);
 // Console.Write("Введите позицию элемента ");
-// int[] coord = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray();
-// ReleaseMatrix(matrix, coord[0] - 1, coord[1] - 1);
+int[] coord = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray();
+ReleaseMatrix(matrix, coord[0] - 1, coord[1] - 1);
